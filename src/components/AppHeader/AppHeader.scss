@@ -1,0 +1,9 @@
+.app {
+  &__heading {
+    display: flex;
+    place-content: center;
+  }
+  &__logo {
+    max-width: 100px;
+  }
+}

@@ -1,0 +1,16 @@
+.card {
+  display: grid;
+  grid-template:
+    "image image image" 1fr
+    ". title ." auto / var(--space--gap) 1fr var(--space--gap);
+  border: var(--border);
+  border-color: var(--color--accent);
+
+  &__title {
+    grid-area: title;
+  }
+  &__image {
+    grid-area: image;
+    mix-blend-mode: overlay;
+  }
+}
