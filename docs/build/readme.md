@@ -27,10 +27,10 @@ You should be familiar with this workflow by now. Let's put it to the test by wo
 
 ## Components
 
-Make your components in the `src/components` folder. Organize your components into subfolders and keep everything tidy. There are examples given for you to follow.
+Make your components in the `src/components` folder. Organize your components into sub-folders and keep everything tidy. There are examples given for you to follow.
 
 ## Styling
 
 There's a starter stylesheet set up. It uses [sass](https://sass-lang.com/guide/), which is a way of writing complicated CSS more easily. You can write plain CSS in any `.scss` file, so you don't have to learn SASS to do this project. (But you might want to learn it anyway, because it's awesome.)
 
-If you don't like these styles, you can replace them with your own. You can also use premade stylesheets from [Tailwind](https://tailwindcss.com/), [Bootstrap](https://getbootstrap.com/), or any other CSS framework you like. But focus on the functionality first, and worry about the styling later.
+If you don't like these styles, you can replace them with your own. You can also use pre-made stylesheets from [Tailwind](https://tailwindcss.com/), [Bootstrap](https://getbootstrap.com/), or any other CSS framework you like. But focus on the functionality first, and worry about the styling later.
