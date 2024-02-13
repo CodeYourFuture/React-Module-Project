@@ -1,6 +1,6 @@
 This is a hotel website you will build with your team. First form your team, then start the project by forking the repo.
 
-## 1. Form your team
+### 1. Form your team
 1. Split into teams of 3 or 4. Use a [random team generator](https://www.randomlists.com/team-generator).
 1. Get together with your team during class day and agree on your way of working for this project.
 
