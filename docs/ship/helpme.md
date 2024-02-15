@@ -1,4 +1,5 @@
-```markdown
+# Help files for issues
+
 ## Issue 1: Feature SearchButton
 
 **Feature:**
@@ -467,4 +468,3 @@ Open both of these packages in your browser, and consider the following question
 - If I decide to use this package and it breaks, will I know how to fix it or replace it?
 
 Labels: 🏝️ Priority Stretch, 🦑 Size Large, 📅 Week 4, 🧩 Feature
-```
