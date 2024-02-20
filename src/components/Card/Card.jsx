@@ -1,6 +1,6 @@
 import "./Card.scss";
 
-const Card = ({ title, url, image }) => {
+const Card = ({ title, anchorTag, image }) => {
   return (
     <>
       <div
@@ -10,7 +10,7 @@ const Card = ({ title, url, image }) => {
         className="card-component"
       >
         <h1 style={{ backgroundColor: "green" }}>{title}</h1>
-        <a src={url}></a>
+        <a href={anchorTag}></a>
         <img src={image} alt="picture" />
       </div>
     </>

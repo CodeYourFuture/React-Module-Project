@@ -8,7 +8,7 @@ const App = () => (
   <div>
     <AppHeader />
     <Bookings />
-    <Card title="this is card component" />
+    <Card title="This is card component" />
   </div>
 );
 
