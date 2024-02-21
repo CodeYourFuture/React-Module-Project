@@ -7,11 +7,13 @@ const Card = ({ title, anchorTag, image }) => {
         style={{
           backgroundColor: "red",
         }}
-        className="card-component"
+        className="card"
       >
-        <h1 style={{ backgroundColor: "green" }}>{title}</h1>
+        <p style={{ backgroundColor: "green" }} className="card__title">
+          {title}
+        </p>
         <a href={anchorTag}></a>
-        <img src={image} alt="picture" />
+        <img src={image} className="card__image" alt="picture" />
       </div>
     </>
   );
