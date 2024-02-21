@@ -16,8 +16,8 @@ const Search = () => (
         className="search__input"
         placeholder="Customer name"
       />
+      <SearchButton />
     </form>
-    <SearchButton />
   </section>
 );
 
