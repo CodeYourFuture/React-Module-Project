@@ -32,3 +32,7 @@ The docs for this project are in the `docs` folder. You should read them all bef
 - [Build](docs/build/readme.md)
 - [Test](docs/test/readme.md)
 - [Ship](docs/ship/readme.md)
+
+## Current Progress
+
+[https://main--cyf-hotel-mkb.netlify.app/]
