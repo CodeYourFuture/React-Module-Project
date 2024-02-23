@@ -1,7 +1,7 @@
 import Bookings from "@/components/Bookings/Bookings.jsx";
 import AppHeader from "../AppHeader/AppHeader.jsx";
-import Card from "../Card/Card.jsx";
 import Deck from "../Deck/Deck.jsx";
+import Footer from "../footer/Footer.jsx";
 
 import "./App.scss";
 
@@ -10,8 +10,7 @@ const App = () => (
     <AppHeader />
     <Deck />
     <Bookings />
-    <Card title="This is card component" />
+    <Footer />
   </div>
 );
-
 export default App;
