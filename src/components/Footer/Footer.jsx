@@ -1,10 +1,13 @@
-function Footer(props){
+import footerData from "@/data/footerData"
+function Footer(){
 
-    const listItems = props.list.map((item) => <li>{item}</li>);
+
     return (
       <div>
         <footer>
-          <ul>{listItems}</ul>
+          <ul>
+            {footerData.map((item) => <li>{item}</li>)}
+          </ul>
         </footer>
       </div>
     );
