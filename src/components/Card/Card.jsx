@@ -1,9 +1,15 @@
-// import "./Card.scss";
+import React from "react";
+import "./Card.scss";
 
-// const Card = ({ title, url, image }) => {
-//   return (
+const Card = (props) => {
+  const { title, url, image } = props;
+  return (
+    <div className="card">
+      <h2>{title}</h2>
+      <img src={image} alt={title} />
+      <a href={url}>Visit {title}</a>
+    </div>
+  );
+};
 
-//   );
-// };
-
-// export default Card;
+export default Card;
