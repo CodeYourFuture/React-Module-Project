@@ -4,15 +4,11 @@ import "./App.scss";
 import AppHeader from "../AppHeader/AppHeader.jsx";
 
 const App = () => (
-  <div className="app">
-    <header className="app__header">
-      <h1 className="app__heading">CYF Hotel</h1>
-    </header>
+  <div>
+    <AppHeader />
     <Bookings />
     <Footer />
   </div>
 );
-
-
 
 export default App;
