@@ -15,7 +15,7 @@ describe("Search Results", () => {
       });
 
       it('should render a table with column for each booking attribute', () => {
-        const { getByTestId, getByText } = render(<SearchResults results={data}/>);
+        const {  getByText } = render(<SearchResults results={data}/>);
     
         expect(getByText('ID')).toBeInTheDocument();
         expect(getByText('Title')).toBeInTheDocument();
