@@ -1,6 +1,5 @@
 import Bookings from "@/components/Bookings/Bookings.jsx";
 import AppHeader from "@/components/AppHeader/AppHeader.jsx"
-import "./App.scss";
 import Card from "../Card/Card";
 
 const App = () => (
