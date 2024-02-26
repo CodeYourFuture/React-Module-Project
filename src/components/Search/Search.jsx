@@ -1,4 +1,5 @@
 import "./Search.scss";
+import SearchButton from "../SearchButton/SearchButton";
 
 const Search = () => (
   <section className="search">
@@ -15,7 +16,8 @@ const Search = () => (
         className="search__input"
         placeholder="Customer name"
       />
-      <button className="button search__button">Search</button>
+      <SearchButton />
+      {SearchButton}
     </form>
   </section>
 );
