@@ -1,8 +1,8 @@
 
 const SearchButton = () => { 
-    return (
-    <button className="button search__button">Search</button>
-    );
-  };
+  return (
+  <button className="button search__button">Search</button>
+  );
+};
 
-  export default SearchButton;
+export default SearchButton;
