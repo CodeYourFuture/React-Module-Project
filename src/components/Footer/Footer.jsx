@@ -6,7 +6,7 @@ function Footer(){
       <div>
         <footer>
           <ul>
-            {footerData.map((item) => <li>{item}</li>)}
+            {footerData.map((item, itemIndex) => <li key={itemIndex}>{item}</li>)}
           </ul>
         </footer>
       </div>
