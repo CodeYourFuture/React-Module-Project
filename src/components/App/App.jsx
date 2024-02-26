@@ -1,6 +1,7 @@
 import Bookings from "@/components/Bookings/Bookings.jsx";
 import Footer from "@/components/Footer/Footer";
 import "./App.scss";
+import Card from "../Card/Card";
 import AppHeader from "../AppHeader/AppHeader.jsx";
 
 const App = () => (
