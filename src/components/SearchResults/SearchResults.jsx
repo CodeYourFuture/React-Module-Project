@@ -1,5 +1,5 @@
 import Booking from "../Booking/Booking";
-import "./SearchResults.scss"
+import "./SearchResults.scss";
 
 const SearchResults = (props) => {
   const bookings = props.bookings;
@@ -15,7 +15,9 @@ const SearchResults = (props) => {
         </tr>
       </thead>
       <tbody>
-        <Booking bookings={bookings} />
+        {bookings.map((booking) => (
+          <Booking key={booking.id} booking={booking} />
+        ))}
       </tbody>
     </table>
   );
