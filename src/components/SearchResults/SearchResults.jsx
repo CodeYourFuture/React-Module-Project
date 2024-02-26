@@ -1,8 +1,10 @@
+import Booking from "../Booking/Booking";
+import "./SearchResults.scss"
+
 const SearchResults = (props) => {
   const bookings = props.bookings;
   return (
-    <table data-testid="search-results-element">
-      <caption>Search Results</caption>
+    <table data-testid="search-results-component">
       <thead>
         <tr>
           <th scope="col">Name</th>
@@ -13,7 +15,7 @@ const SearchResults = (props) => {
         </tr>
       </thead>
       <tbody>
-
+        <Booking bookings={bookings} />
       </tbody>
     </table>
   );
