@@ -1,16 +1,21 @@
 import Search from "@/components/Search/Search";
-// import SearchResults from "@/componentsSearchResults.js";
-// import FakeBookings from "@/data/fakeBookings.json";
+import SearchResults from "@/components/SearchResults/SearchResults.jsx";
+import data from "@/data/fakeBookings.json";
+import { useState } from "react";
 
 const Bookings = () => {
+  const [filtered, setFiltered] = useState(data);
+
   const search = (searchVal) => {
-    console.info("TO DO!", searchVal);
+    setFiltered(
+      data.filter((item) => item.firstName.toLowerCase().includes(searchVal))
+    );
   };
 
   return (
     <main className="bookings">
       <Search search={search} />
-      {/* <SearchResults results={FakeBookings} /> */}
+      <SearchResults results={filtered} />
     </main>
   );
 };
