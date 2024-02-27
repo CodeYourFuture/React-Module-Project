@@ -2,16 +2,16 @@
   {
     "title": "Glasgow",
     "url": "https://peoplemakeglasgow.com",
-    "image": "placeholderImage.svg"
+    "image": "src/assets/placeholderImage.svg"
   },
   {
     "title": "Manchester",
     "url": "https://visitmanchester.com",
-    "image": "placeholderImage.svg"
+    "image": "src/assets/placeholderImage.svg"
   },
   {
     "title": "London",
     "url": "https://visitlondon.com",
-    "image": "placeholderImage.svg"
+    "image": "src/assets/placeholderImage.svg"
   }
 ]
