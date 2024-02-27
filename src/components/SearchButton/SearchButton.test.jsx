@@ -6,10 +6,10 @@ describe("Search Button", () => {
   it("should have a test, please write one", () => {
     return true;
   });
-  // could you start with this?
-  //   it("renders a search button", () => {
-  //     render(<SearchButton />);
-  //     const searchButton = screen.getByRole("button");
-  //     expect(searchButton).toBeInTheDocument();
-  //   });
+  
+   test("renders a search button", () => {
+      render(<SearchButton />);
+      const searchButton = screen.getByRole("button");
+      expect(searchButton).toBeInTheDocument();
+    });
 });
