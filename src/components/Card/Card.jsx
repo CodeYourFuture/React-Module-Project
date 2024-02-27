@@ -1,13 +1,13 @@
 import "./Card.scss";
 
-const Card = ({ title, url, image }) => {
+const Card = (props) => {
   return (
-    <>
-      <h2>{title}</h2>
-      <a href={url}>
-        <img src={image} />
+    <div>
+      <h2>{props.title}</h2>
+      <a href={props.url}>
+        <img src={props.src} alt="City Image"/>
       </a>
-    </>
+    </div>
   );
 };
 
