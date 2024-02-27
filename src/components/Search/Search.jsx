@@ -17,7 +17,6 @@ const Search = () => (
         placeholder="Customer name"
       />
       <SearchButton />
-      {SearchButton}
     </form>
   </section>
 );
