@@ -1,6 +1,7 @@
 import Bookings from "@/components/Bookings/Bookings.jsx";
-import "./App.scss";
-import Footer from "@/components/Footer/Footer.jsx";
+import AppHeader from "@/components/AppHeader/AppHeader.jsx"; // Resolved conflict
+import Footer from "@/components/Footer/Footer.jsx"; // Resolved conflict
+import Card from "../Card/Card"; // Resolved conflict
 import { useState } from "react";
 
 const arr = [
@@ -9,14 +10,12 @@ const arr = [
   "0123 456789",
 ];
 
-
 const App = () => (
   <div className="app">
-    <header className="app__header">
-      <h1 className="app__heading">CYF Hotel</h1>
-    </header>
+    <AppHeader/> {/* Resolved conflict */}
     <Bookings />
-    <Footer array={arr} />
+    <Footer array={arr} /> {/* Resolved conflict */}
+    <Card /> {/* Resolved conflict */}
   </div>
 );
 
