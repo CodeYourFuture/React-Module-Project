@@ -1,3 +1,5 @@
+import dayjs from "dayjs";
+
 const Booking = (props) => {
   const {
     title,
@@ -17,7 +19,7 @@ const Booking = (props) => {
       <td>{roomId}</td>
       <td>{checkInDate}</td>
       <td>{checkOutDate}</td>
-      <td>{}</td>
+      <td>{dayjs(checkOutDate).diff(dayjs(checkInDate), "d")}</td>
     </tr>
   );
 };
