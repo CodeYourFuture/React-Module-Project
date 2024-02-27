@@ -1,0 +1,17 @@
+#footerSection {
+  background-color: var(--color--accent);
+  color: var(--color--paper);
+  max-width: var(--space--container);
+  margin: auto;
+  padding: var(--space--gap);
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-radius: var(--border-radius);
+}
+.footerUlContactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space--m);
+}
