@@ -10,6 +10,7 @@ const ResultsTable = (props) => {
           <td>{props.roomId}</td>
           <td>{props.checkInDate}</td>
           <td>{props.checkOutDate}</td>
+          <td>{props.nights}</td> 
         </tr>
       </>
     );
