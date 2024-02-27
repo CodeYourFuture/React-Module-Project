@@ -17,6 +17,7 @@ const Booking = (props) => {
       <td>{roomId}</td>
       <td>{checkInDate}</td>
       <td>{checkOutDate}</td>
+      <td>{}</td>
     </tr>
   );
 };

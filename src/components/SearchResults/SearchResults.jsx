@@ -12,6 +12,7 @@ const SearchResults = (props) => {
           <th scope="col">Room</th>
           <th scope="col">Check in</th>
           <th scope="col">Check out</th>
+          <th scope="col">Nights</th>
         </tr>
       </thead>
       <tbody>
