@@ -2,6 +2,8 @@ import { useState } from "react";
 
 const Restaurant = () => {
   const [orders, setOrders] = useState(0);
+
+  
   return (
     <section className="restaurant">
       <h3 className="restaurant__heading">Restaurant Orders</h3>
