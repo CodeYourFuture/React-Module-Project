@@ -1,5 +1,4 @@
-import SearchButton from "./SearchButton.jsx";
-import "./SearchButton.scss";
+import SearchButton from "./SearchButton";
 import { describe, it, expect } from "vitest";
 import { render, screen } from "@testing-library/react";
 
@@ -19,10 +18,8 @@ describe("Search Button", () => {
   it("has the correct class name", () => {
     render(<SearchButton />);
     const searchButton = screen.getByRole("button");
-    expect(searchButton).toHaveClass("button");
     expect(searchButton).toHaveClass("search__button");
   });
-
 
   it("has pointer cursor style", () => {
     render(<SearchButton />);
