@@ -1,11 +1,9 @@
 import Bookings from "@/components/Bookings/Bookings.jsx";
 import "./App.scss";
-
-import Deck from "../Deck/Deck";
-
 import Footer from "../Footer/Footer";
 import Deck from "../Deck/Deck";
 import AppHeader from "../AppHeader/AppHeader";
+
 const App = () => (
   <div className="app">
     <header className="app__header">
