@@ -1,10 +1,21 @@
+import React, { useState } from "react";
 import dayjs from "dayjs";
 
 function SearchResults({ results }) {
+  const [selectedRow, setSelectedRow] = useState(null);
+
+  const handleRowClick = (index) => {
+    if (selectedRow === index) {
+      setSelectedRow(null);
+    } else {
+      setSelectedRow(index);
+    }
+  };
+
   return (
     <table>
       <thead>
-        <tr>
+        <tr style={{ backgroundColor: "green" }}>
           <th>Id</th>
           <th>Title</th>
           <th>First Name</th>
@@ -21,17 +32,26 @@ function SearchResults({ results }) {
           const startDate = dayjs(item.checkInDate);
           const endDate = dayjs(item.checkOutDate);
           const daysDifference = endDate.diff(startDate, "day");
+
+          const isSelected = selectedRow === index;
+          const rowStyle = {
+            textAlign: "center",
+            backgroundColor: "blue",
+          };
+          if (isSelected) {
+            rowStyle.backgroundColor = "red";
+          }
+
           return (
             <tr
-              style={{
-                textAlign: "center",
-              }}
               key={index}
+              style={rowStyle}
+              onClick={() => handleRowClick(index)}
             >
               <td>{item.id}</td>
               <td>{item.title}</td>
               <td>{item.firstName}</td>
-              <td>{item.lastName}</td>
+              <td>{item.surname}</td>
               <td>{item.email}</td>
               <td>{item.roomId}</td>
               <td>{item.checkInDate}</td>
