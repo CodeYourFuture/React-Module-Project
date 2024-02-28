@@ -4,8 +4,6 @@ import RestaurantButton from "../RestaurantButton";
 const Restaurant = () => {
   const [orders, setOrders] = useState(0);
 
-  
-
   function orderOne() {
     setOrders(orders + 1);
   }
@@ -15,7 +13,7 @@ const Restaurant = () => {
       <ul className="restaurant__list">
         <li className="restaurant__item">
           Pizzas: {orders}{" "}
-          <RestaurantButton />
+          <RestaurantButton orderOne = {orderOne}/>
         </li>
       </ul>
     </section>
