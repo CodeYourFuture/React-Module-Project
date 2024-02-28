@@ -51,7 +51,7 @@ function SearchResults({ results }) {
               <td>{item.id}</td>
               <td>{item.title}</td>
               <td>{item.firstName}</td>
-              <td>{item.lastName}</td>
+              <td>{item.surname}</td>
               <td>{item.email}</td>
               <td>{item.roomId}</td>
               <td>{item.checkInDate}</td>
