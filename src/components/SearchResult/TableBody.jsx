@@ -1,7 +1,17 @@
 // import FakeBookings from "@/data/fakeBookings.json";
 
 function TableBody(props) {
-  let { id, title, name, firstName, surName, email } = props;
+  let {
+    id,
+    title,
+    name,
+    firstName,
+    surName,
+    email,
+    roomId,
+    checkInDate,
+    checkOutDate,
+  } = props;
   return (
     <>
       <tr key={id}>
@@ -10,6 +20,9 @@ function TableBody(props) {
         <td>{firstName}</td>
         <td>{surName}</td>
         <td>{email}</td>
+        <td>{roomId}</td>
+        <td>{checkInDate}</td>
+        <td>{checkOutDate}</td>
       </tr>
     </>
   );
