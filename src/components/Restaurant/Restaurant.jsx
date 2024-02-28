@@ -15,9 +15,6 @@ const Restaurant = () => {
       <ul className="restaurant__list">
         <li className="restaurant__item">
           Pizzas: {orders}{" "}
-          <button onClick={orderOne} className="button restaurant__button">
-            Add
-          </button>
           <RestaurantButton />
         </li>
       </ul>
