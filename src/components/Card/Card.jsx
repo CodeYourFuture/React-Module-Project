@@ -7,7 +7,10 @@ const Card = (props) => {
     <div className="card">
       <h2>{title}</h2>
       <img src={image} alt={title} />
+
       <a href={url}> {title}</a>
+
+
     </div>
   );
 };
