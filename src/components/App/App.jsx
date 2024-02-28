@@ -4,7 +4,7 @@ import Footer from "@/components/Footer/Footer.jsx";
 import Deck from "../Deck/Deck";
 import Restaurant from "../Restaurant/Restaurant.jsx";
 import "./App.scss"
-import Restaurant from "../Restaurant/Restaurant";
+
 
 const arr = [
   "123 Fake Street, London, E1 4UD",
