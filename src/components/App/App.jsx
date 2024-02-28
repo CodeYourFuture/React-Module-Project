@@ -2,6 +2,7 @@ import Bookings from "@/components/Bookings/Bookings.jsx";
 import AppHeader from "@/components/AppHeader/AppHeader.jsx";
 import Footer from "@/components/Footer/Footer.jsx";
 import Deck from "../Deck/Deck";
+import Restaurant from "../Restaurant/Restaurant.jsx";
 import "./App.scss"
 
 const arr = [
@@ -15,6 +16,7 @@ const App = () => (
     <AppHeader />
     <Deck />
     <Bookings />
+    <Restaurant />
     <Footer array={arr} />
   </div>
 );
