@@ -1,4 +1,5 @@
 import Search from "@/components/Search/Search";
+import SearchResult from "../SearchResult/SearchResult";
 // import SearchResults from "@/componentsSearchResults.js";
 // import FakeBookings from "@/data/fakeBookings.json";
 
@@ -10,7 +11,7 @@ const Bookings = () => {
   return (
     <main className="bookings">
       <Search search={search} />
-      {/* <SearchResults results={FakeBookings} /> */}
+      <SearchResult />
     </main>
   );
 };
