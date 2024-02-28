@@ -1,7 +1,7 @@
 import "./SearchResult.scss";
 import FakeBookings from "@/data/fakeBookings.json";
 import TableBody from "./TableBody";
-import TableHead from "./tabeleHead";
+import TableHead from "./TabeleHead";
 const Bookings = FakeBookings;
 function SearchResult() {
   return (
