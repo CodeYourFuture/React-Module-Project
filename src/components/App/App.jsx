@@ -1,5 +1,7 @@
+import React from "react";
 import Bookings from "@/components/Bookings/Bookings.jsx";
 import "./App.scss";
+import Deck from "../Deck/Deck";
 
 const App = () => (
   <div className="app">
@@ -7,6 +9,7 @@ const App = () => (
       <h1 className="app__heading">CYF Hotel</h1>
     </header>
     <Bookings />
+    <Deck/>
   </div>
 );
 
