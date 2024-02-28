@@ -1,5 +1,8 @@
 import Bookings from "@/components/Bookings/Bookings.jsx";
 import "./App.scss";
+
+import Deck from "../Deck/Deck";
+
 import Footer from "../Footer/Footer";
 import Deck from "../Deck/Deck";
 import AppHeader from "../AppHeader/AppHeader";
@@ -10,7 +13,9 @@ const App = () => (
     </header>
     <AppHeader />
     <Bookings />
+
     <Deck />
+
     <Footer
       details={[
         "123 Fake Street, London, E1 4UD",
