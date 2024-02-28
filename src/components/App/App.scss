@@ -5,10 +5,9 @@
   max-width: var(--space--container);
   margin: auto;
   padding: var(--space--gap);
+  gap: 5rem;
 }
 
 .app_footer{
-  background-color: rgb(154, 57, 57);
-  position: absolute;
-  bottom: -10rem;
+display: flex;
 }

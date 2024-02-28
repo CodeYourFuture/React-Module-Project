@@ -1,8 +1,9 @@
 import Bookings from "@/components/Bookings/Bookings.jsx";
-import AppHeader from "@/components/AppHeader/AppHeader.jsx"; // Resolved conflict
-import Footer from "@/components/Footer/Footer.jsx"; // Resolved conflict
-import Card from "../Card/Card"; // Resolved conflict
-import { useState } from "react";
+import AppHeader from "@/components/AppHeader/AppHeader.jsx";
+import Footer from "@/components/Footer/Footer.jsx";
+import Deck from "../Deck/Deck";
+import "./App.scss"
+import Restaurant from "../Restaurant/Restaurant";
 
 const arr = [
   "123 Fake Street, London, E1 4UD",
@@ -12,10 +13,11 @@ const arr = [
 
 const App = () => (
   <div className="app">
-    <AppHeader/> {/* Resolved conflict */}
+    <AppHeader />
+    <Deck />
     <Bookings />
-    <Footer array={arr} /> {/* Resolved conflict */}
-    <Card /> {/* Resolved conflict */}
+    <Restaurant />
+    <Footer array={arr} />
   </div>
 );
 
