@@ -1,3 +1,5 @@
+import "./Restaurant.scss"
+
 const Restaurant = () => {
   const pizzas = 0;
   return (
