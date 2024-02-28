@@ -19,9 +19,6 @@ function SearchResult() {
               firstName={book.firstName}
               surName={book.surname}
               email={book.email}
-              roomId={book.roomId}
-              checkInDate={book.checkInDate}
-              checkOutDate={book.checkOutDate}
             />
           </>
         ))}
