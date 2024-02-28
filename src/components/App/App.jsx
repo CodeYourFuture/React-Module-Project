@@ -3,6 +3,7 @@ import AppHeader from "@/components/AppHeader/AppHeader.jsx";
 import Footer from "@/components/Footer/Footer.jsx";
 import Deck from "../Deck/Deck";
 import "./App.scss"
+import Restaurant from "../Restaurant/Restaurant";
 
 const arr = [
   "123 Fake Street, London, E1 4UD",
@@ -15,6 +16,7 @@ const App = () => (
     <AppHeader />
     <Deck />
     <Bookings />
+    <Restaurant />
     <Footer array={arr} />
   </div>
 );
