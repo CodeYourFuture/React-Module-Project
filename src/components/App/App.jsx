@@ -1,8 +1,9 @@
 import React from "react";
 import Footer from "@/components/Footer/Footer";
 import Bookings from "@/components/Bookings/Bookings.jsx";
-import "./App.scss";
+import AppHeader from "../AppHeader/AppHeader";
 import Deck from "@/components/Deck/Deck";
+import "./App.scss";
 
 const App = () => {
   const addresses = [
@@ -13,9 +14,7 @@ const App = () => {
 
   return (
     <div className="app">
-      <header className="app__header">
-        <h1 className="app__heading">CYF Hotel</h1>
-      </header>
+      <AppHeader/>
       <Bookings />
       <Deck/>
       <Footer addresses={addresses} />
