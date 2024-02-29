@@ -7,7 +7,7 @@ const App = () => (
     <header className="app__header">
       <h1 className="app__heading">CYF Hotel</h1>
     </header>
-    <Card/>
+    <Card title="Welcome to CYF Hotel" url="https://cyf-hotel.com" image="https://cyf-hotel.com/images/banner.jpg" />
     <Bookings />
   </div>
 );
