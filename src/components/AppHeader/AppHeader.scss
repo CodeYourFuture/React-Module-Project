@@ -1,7 +1,12 @@
 .app {
+  &__header{
+    display: flex;
+    justify-content: flex-start;
+  }
   &__heading {
     display: flex;
     place-content: center;
+    margin: auto;
   }
   &__logo {
     max-width: 100px;
