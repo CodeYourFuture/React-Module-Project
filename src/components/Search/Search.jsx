@@ -1,3 +1,5 @@
+import React from "react";
+import SearchButton from "../SearchButton/SearchButton";
 import "./Search.scss";
 
 const Search = () => (
@@ -15,7 +17,7 @@ const Search = () => (
         className="search__input"
         placeholder="Customer name"
       />
-      <button className="button search__button">Search</button>
+      <SearchButton />
     </form>
   </section>
 );
