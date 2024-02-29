@@ -1,17 +1,10 @@
 import dayjs from "dayjs";
 
-import "./Booking.scss"
+import "./Booking.scss";
 
 const Booking = (props) => {
-  const {
-    title,
-    firstName,
-    surname,
-    email,
-    roomId,
-    checkInDate,
-    checkOutDate,
-  } = props.booking;
+  // prettier-ignore
+  const { title, firstName, surname, email, roomId, checkInDate, checkOutDate } = props.booking;
   const stayNights = dayjs(checkOutDate).diff(dayjs(checkInDate), "d");
 
   return (
@@ -23,7 +16,9 @@ const Booking = (props) => {
       <td className="customer-room">{roomId}</td>
       <td className="customer-checkin">{checkInDate}</td>
       <td className="customer-checkout">{checkOutDate}</td>
-      <td className="customer-stay">{stayNights} {stayNights > 1 ? 'nights' : 'night'}</td>
+      <td className="customer-stay">
+        {stayNights} {stayNights > 1 ? "nights" : "night"}
+      </td>
     </tr>
   );
 };
