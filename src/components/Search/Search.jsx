@@ -1,5 +1,5 @@
 import React from "react";
-import SearchButton from "./SearchButton/SearchButton";
+import SearchButton from "../SearchButton/SearchButton";
 import "./Search.scss";
 
 const Search = () => (
