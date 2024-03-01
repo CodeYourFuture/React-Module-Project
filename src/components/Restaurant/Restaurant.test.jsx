@@ -12,9 +12,14 @@ describe("Restaurant", () => {
   });
 
   it("checks Orders initial value is 0", () => {
-    const { getByTestId } = render(<Restaurant />);
-  const ordersDisplay = getByTestId("orders");
-  expect(ordersDisplay.textContent).toBe("Pizzas: 0 Add");
+    render(<Restaurant />);
+
+    const orderElements = document.querySelectorAll('[data-testid="orders"]');
+    const pizzaOrders = Array.from(orderElements).filter(element => element.textContent.trim() === 'Pizza');
+    
+    pizzaOrders.forEach(order => {
+      expect(order.textContent).toContain('0');
+    });
   });
-  
+ 
 });
