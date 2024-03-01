@@ -16,7 +16,6 @@ describe("Search Component", () => {
     expect(inputField.value).toBe("test value");
   });
 
-  describe("Search Component", () => {
     it("check the input value is logged or not", () => {
       render(<Search />);
       const consoleLogSpy = vi.spy(console, 'log');
@@ -24,5 +23,5 @@ describe("Search Component", () => {
       fireEvent.change(inputField, { target: { value: 'test value' } });
       expect(consoleLogSpy).toHaveBeenCalledWith('Input value: test value');
     });
-  });
+
 });
