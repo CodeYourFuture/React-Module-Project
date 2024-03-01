@@ -3,7 +3,11 @@ import SearchButton from "../SearchButton/SearchButton";
 import { useState } from "react";
 
 const Search = (props) => {
-  const [searchTerm, setSearchTerm] = useState("");
+  const [searchInput, setSearchInput] = useState("");
+  function handleSearchInput(event) {
+  setSearchInput(event.target.value);
+  console.log(searchInput);
+  }
 
   return (
     <section className="search">
@@ -19,9 +23,10 @@ const Search = (props) => {
           id="customerName"
           className="search__input"
           placeholder="Customer name"
-          onChange={(e) => setSearchTerm(e.target.value)}
+          value={searchInput}
+          onChange={handleSearchInput}
         />
-        <SearchButton click={props.search} input={searchTerm} />
+        <SearchButton click={props.search} input={searchInput} />
       </form>
     </section>
   );
