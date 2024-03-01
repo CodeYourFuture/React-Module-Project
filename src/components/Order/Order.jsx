@@ -7,7 +7,7 @@ const Order = ({ orderType }) => {
     setOrders(orders + 1);
   };
   return (
-    <li className="restaurant__item">
+    <li data-testid='orders' className="restaurant__item">
       {orderType}: {orders} <RestaurantButton orderOne={orderOne} />
     </li>
   );
