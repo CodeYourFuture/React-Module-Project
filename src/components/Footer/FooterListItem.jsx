@@ -1,3 +1,7 @@
 export default function FooterListItem({ listItem }) {
-  return <li className="footerPContactInfo">{listItem}</li>;
+  return (
+    <li data-testid="address" className="addressInfo">
+      {listItem}
+    </li>
+  );
 }

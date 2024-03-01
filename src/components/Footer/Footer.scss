@@ -1,4 +1,4 @@
-#footerSection {
+footer {
   background-color: var(--color--accent);
   color: var(--color--paper);
   max-width: var(--space--container);
@@ -9,8 +9,13 @@
   justify-content: space-between;
   align-items: flex-start;
   border-radius: var(--border-radius);
+
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
 }
-.footerUlContactInfo {
+.addressInfo {
   display: flex;
   flex-direction: column;
   gap: var(--space--m);
