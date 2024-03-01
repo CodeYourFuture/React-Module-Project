@@ -10,6 +10,7 @@ function TableHead() {
         <th>Room id</th>
         <th>Check in date</th>
         <th>Check out date</th>
+        <th>Total Nights to Stay</th>
       </tr>
     </>
   );
