@@ -19,4 +19,18 @@ table {
   tr:hover {
     background-color: #139c73;
   }
+
+     & button {
+       padding: 8px 12px;
+       background-color: #4b1446;
+       color: #fff;
+       border: none;
+       border-radius: 4px;
+       cursor: pointer;
+         
+       &:hover {
+         background-color: #084432;
+       }
+     }
 }
+ 
