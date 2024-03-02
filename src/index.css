@@ -1,6 +1,5 @@
 :root {
-  --font: 400 100%/1.5 "Raleway", system-ui, Avenir, Helvetica, Arial,
-    sans-serif;
+  --font: 400 100%/1.5 "Raleway", system-ui, Avenir, Helvetica, Arial, sans-serif;
   --color--ink: color(srgb 0.95 0.93 0.97);
   --color--paper: #231b2e;
   --color--accent: hsla(262, 100%, 67%, 1);
@@ -10,7 +9,7 @@
   --space--l: calc(var(--space--gap) * 2);
   --space--container: 1280px;
   --border: 1px solid transparent;
-  --border-radius: var(var(--space--s));
+  --border-radius: var(--space--s);
 }
 
 a {
