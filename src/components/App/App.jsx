@@ -1,5 +1,6 @@
 import Bookings from "@/components/Bookings/Bookings.jsx";
 import "./App.scss";
+import Card from "../Card/Card";
 import Footer from "../Footer/Footer";
 
 const App = () => (
@@ -7,6 +8,7 @@ const App = () => (
     <header className="app__header">
       <h1 className="app__heading">CYF Hotel</h1>
     </header>
+    <Card title="Welcome to CYF Hotel" url="https://cyf-hotel.com" image="https://cyf-hotel.com/images/banner.jpg" />
     <Bookings />
     <Footer />
   </div>

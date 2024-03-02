@@ -1,16 +1,53 @@
-.card {
-  display: grid;
-  grid-template:
-    "image image image" 1fr
-    ". title ." auto / var(--space--gap) 1fr var(--space--gap);
-  border: var(--border);
-  border-color: var(--color--accent);
+// .card {
+//   display: grid;
+//   grid-template:
+//     "image image image" 1fr
+//     ". title ." auto / var(--space--gap) 1fr var(--space--gap);
+//   border: var(--border);
+//   border-color: var(--color--accent);
 
-  &__title {
-    grid-area: title;
-  }
-  &__image {
-    grid-area: image;
-    mix-blend-mode: overlay;
-  }
+//   &__title {
+//     grid-area: title;
+//   }
+//   &__image {
+//     grid-area: image;
+//     mix-blend-mode: overlay;
+//   }
+// }
+
+
+/* Card.css */
+.card {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card a {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.card a:hover {
+  background-color: #0056b3;
 }
