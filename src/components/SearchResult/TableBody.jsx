@@ -11,6 +11,7 @@ function TableBody(props) {
     roomId,
     checkInDate,
     checkOutDate,
+    stayNights,
   } = props;
   return (
     <>
@@ -23,6 +24,7 @@ function TableBody(props) {
         <td>{roomId}</td>
         <td>{checkInDate}</td>
         <td>{checkOutDate}</td>
+        <td>{stayNights}</td>
       </tr>
     </>
   );

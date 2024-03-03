@@ -1,17 +1,17 @@
 import Bookings from "@/components/Bookings/Bookings.jsx";
 import "./App.scss";
-
-import Deck from "../Deck/Deck";
-
 import Footer from "../Footer/Footer";
 import Deck from "../Deck/Deck";
 import AppHeader from "../AppHeader/AppHeader";
+
 const App = () => (
   <div className="app">
-    <header className="app__header">
-      <h1 className="app__heading">CYF Hotel</h1>
-    </header>
-    <AppHeader />
+    <div className="header">
+      <header className="app__header">
+        <h1 className="app__heading">CYF Hotel</h1>
+      </header>
+      <AppHeader />
+    </div>
     <Bookings />
 
     <Deck />
