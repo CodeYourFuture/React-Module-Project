@@ -1,11 +1,15 @@
-// import Card from "@/components/Card/Card";
-// import "./Deck.scss";
-// import cardsData from "@/data/fakeCards.json";
+import Card from "@/components/Card/Card";
+import "./Deck.scss";
+import cardsData from "@/data/fakeCards.json";
 
-// const Deck = () => {
-// you will need to map over the cardsData array and render a Card component for each card object
-// how will you pass props to the Card component?
+const Deck = () => {
+    return (
+      <div className="deck">
+        {cardsData.map((cardData, i) => (
+          <Card title={cardData.title} url={cardData.url} image={cardData.image} key={i} />
+        ))}
+      </div>
+    );
+};
 
-// };
-
-// export default Deck;
+export default Deck;

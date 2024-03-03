@@ -18,6 +18,9 @@
 
 /* Card.css */
 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 300px;
   padding: 20px;
   border: 1px solid #ccc;
@@ -33,10 +36,18 @@
   margin-bottom: 15px;
 }
 
+.card-body{
+display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
 .card h2 {
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
+
 
 .card a {
   display: inline-block;
