@@ -6,7 +6,9 @@ const Restaurant = () => {
       <ul className="restaurant__list">
         <li className="restaurant__item">
           Pizzas: {pizzas}{" "}
-          <button className="button restaurant__button">Add</button>
+          <button className="button restaurant__button" onClick={Restaurant}>
+            Add
+          </button>
         </li>
       </ul>
     </section>
