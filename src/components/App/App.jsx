@@ -3,6 +3,7 @@ import "./App.scss";
 import Footer from "../Footer/Footer";
 import Deck from "../Deck/Deck";
 import AppHeader from "../AppHeader/AppHeader";
+import Restaurant from "../Restaurant/Restaurant";
 
 const App = () => (
   <div className="app">
@@ -13,6 +14,7 @@ const App = () => (
       <AppHeader />
     </div>
     <Bookings />
+    <Restaurant />
 
     <Deck />
 
