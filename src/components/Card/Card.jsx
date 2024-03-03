@@ -2,7 +2,7 @@ import "./Card.scss";
 
 const Card = ({ title, url, image }) => {
   return (
-    <div className="card">
+    <div className="card" data-testid="card">
       <img src={image} alt={title} />
       <div className="card-body">
         <h2>{title}</h2>
