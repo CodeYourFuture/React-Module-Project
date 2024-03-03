@@ -1,22 +1,3 @@
-// .card {
-//   display: grid;
-//   grid-template:
-//     "image image image" 1fr
-//     ". title ." auto / var(--space--gap) 1fr var(--space--gap);
-//   border: var(--border);
-//   border-color: var(--color--accent);
-
-//   &__title {
-//     grid-area: title;
-//   }
-//   &__image {
-//     grid-area: image;
-//     mix-blend-mode: overlay;
-//   }
-// }
-
-
-/* Card.css */
 .card {
   display: flex;
   flex-direction: column;
@@ -36,18 +17,16 @@
   margin-bottom: 15px;
 }
 
-.card-body{
-display: flex;
+.card-body {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 .card h2 {
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
-
 
 .card a {
   display: inline-block;
@@ -60,5 +39,10 @@ display: flex;
 }
 
 .card a:hover {
-  background-color: #0056b3;
+  background-color: #003b7a;
+  color: white;
+}
+
+.card a:focus {
+  color: white;
 }
