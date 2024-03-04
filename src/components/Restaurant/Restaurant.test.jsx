@@ -6,7 +6,7 @@ describe("Restaurant", () => {
   it("renders an Orders heading", () => {
     render(<Restaurant />);
     const titleElement = screen.getByRole("heading", {
-      level: 3,
+      name: 'Restaurant Orders',
     });
     expect(titleElement).toBeInTheDocument();
   });
