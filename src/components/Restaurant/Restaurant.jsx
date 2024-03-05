@@ -4,7 +4,7 @@ import "./Restaurant.scss";
 const Restaurant = () => {
   const [orders, setOrders] = useState(0);
 
-  const handleAddPizza = () => {
+  const orderOne = () => {
     setOrders(orders + 1);
   };
 
@@ -14,10 +14,7 @@ const Restaurant = () => {
       <ul className="restaurant__list">
         <li className="restaurant__item">
           Pizzas: {orders}{" "}
-          <button
-            className="button restaurant__button"
-            onClick={handleAddPizza}
-          >
+          <button className="button restaurant__button" onClick={orderOne}>
             Add
           </button>
         </li>
