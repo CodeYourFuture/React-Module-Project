@@ -3,6 +3,7 @@ import Footer from "@/components/Footer/Footer";
 import Bookings from "@/components/Bookings/Bookings.jsx";
 import AppHeader from "../AppHeader/AppHeader";
 import Deck from "@/components/Deck/Deck";
+import Restaurant from "@/components/Restaurant/Restaurant.jsx";
 import "./App.scss";
 
 const App = () => {
@@ -14,9 +15,10 @@ const App = () => {
 
   return (
     <div className="app">
-      <AppHeader/>
+      <AppHeader />
       <Bookings />
-      <Deck/>
+      <Deck />
+      <Restaurant />
       <Footer addresses={addresses} />
     </div>
   );

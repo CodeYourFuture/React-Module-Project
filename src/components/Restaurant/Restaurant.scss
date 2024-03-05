@@ -1,0 +1,39 @@
+.restaurant {
+  background-color: lightgray;
+  padding: 20px;
+  margin-top: 5px;
+  margin-bottom: 100px;
+  border-radius: 10px;
+}
+
+.restaurant__heading {
+  font-size: 25px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.restaurant__list {
+  list-style: none;
+  padding: 0;
+}
+
+.restaurant__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid red;
+}
+
+.restaurant__button {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.restaurant__button:hover {
+  background-color: darkblue;
+}
