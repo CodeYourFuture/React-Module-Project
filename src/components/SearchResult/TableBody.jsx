@@ -1,6 +1,11 @@
-// import FakeBookings from "@/data/fakeBookings.json";
-
+import FakeBookings from "@/data/fakeBookings.json";
+import React from "react";
+import { useState } from "react";
 function TableBody(props) {
+  const [selectedRow, setSelectedRow] = useState("unselect");
+  function handleSelect() {
+    setSelectedRow(selectedRow === "unselect" ? "selected" : "unselect");
+  }
   let {
     id,
     title,
@@ -15,7 +20,11 @@ function TableBody(props) {
   } = props;
   return (
     <>
-      <tr key={id}>
+      <tr
+        key={id}
+        onClick={handleSelect}
+        className={`table-row ${selectedRow}`}
+      >
         <td>{id}</td>
         <td>{title}</td>
         <td>{firstName}</td>
