@@ -1,4 +1,4 @@
-// import FakeBookings from "@/data/fakeBookings.json";
+import FakeBookings from "@/data/fakeBookings.json";
 
 function TableBody(props) {
   let {
