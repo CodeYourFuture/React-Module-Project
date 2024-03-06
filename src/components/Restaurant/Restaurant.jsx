@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Restaurant.scss";
+import RestaurantButton from "../RestaurantButton/RestaurantButton";
 
 const Restaurant = () => {
   const [orders, setOrders] = useState(0);
@@ -19,6 +20,7 @@ const Restaurant = () => {
           </button>
         </li>
       </ul>
+
     </section>
   );
 };
