@@ -5,7 +5,7 @@ import RestaurantButton from "../RestaurantButton/RestaurantButton";
 const Restaurant = () => {
   const [orders, setOrders] = useState(0);
 
-  const orderOnehandleAddPizza = () => {
+  const orderOne = () => {
     setOrders(orders + 1);
   };
 
@@ -15,7 +15,7 @@ const Restaurant = () => {
       <ul className="restaurant__list">
         <li className="restaurant__item">
           Pizzas: {orders}{" "}
-          <RestaurantButton orderOnehandleAddPizza={orderOnehandleAddPizza} />
+          <RestaurantButton orderOne={orderOne} />
         </li>
       </ul>
 

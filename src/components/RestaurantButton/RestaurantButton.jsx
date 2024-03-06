@@ -1,11 +1,11 @@
 import React from "react";
 
-const RestaurantButton = ({orderOnehandleAddPizza}) => {
+const RestaurantButton = ({orderOne}) => {
     return (
         <>
             <button
                 className="button restaurant__button"
-                onClick={orderOnehandleAddPizza}>Add
+                onClick={orderOne}>Add
             </button>
         </>
     )
