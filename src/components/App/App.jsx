@@ -4,6 +4,7 @@ import Footer from "../Footer/Footer";
 import Deck from "../Deck/Deck";
 import AppHeader from "../AppHeader/AppHeader";
 import Restaurant from "../Restaurant/Restaurant";
+import RestaurantButton from "../RestaurantButton/RestaurantButton";
 
 const App = () => (
   <div className="app">
@@ -15,7 +16,7 @@ const App = () => (
     </div>
     <Bookings />
     <Restaurant />
-
+    <RestaurantButton OrderOne={Restaurant().OrderOne}/>
     <Deck />
 
     <Footer
