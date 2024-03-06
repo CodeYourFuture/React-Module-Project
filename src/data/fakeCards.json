@@ -2,16 +2,18 @@
   {
     "title": "Glasgow",
     "url": "https://peoplemakeglasgow.com",
-    "image": "placeholderImage.svg"
+    "image": "https://img.freepik.com/free-vector/glasgow-scotland-uk-silhouette-skyline-with-panorama-sky-background-vector-illustration-business-travel-tourism-concept-with-modern-buildings-image-banner-website_596401-579.jpg?w=2000&t=st=1709255793~exp=1709256393~hmac=fd697d325632983bcbbf1907e0ac5e5dfd0053260b437123ebc3c3c8132d7e6a"
   },
   {
     "title": "Manchester",
     "url": "https://visitmanchester.com",
-    "image": "placeholderImage.svg"
+    "image": "https://img.freepik.com/free-vector/manchester-england-skyline-with-panorama-white-background-vector-illustration-business-travel-tourism-concept-with-modern-buildings-image-banner-web-site_596401-57.jpg?w=2000&t=st=1709255885~exp=1709256485~hmac=907837286b58edf902a049435029bd8869963ac1aea6dbb00ec39dfebfb9e53f"
   },
   {
     "title": "London",
     "url": "https://visitlondon.com",
-    "image": "placeholderImage.svg"
+    "image":"https://img.freepik.com/free-vector/red-skyline-london_23-2147777055.jpg?t=st=1709256433~exp=1709260033~hmac=cba412615bc8ac13cd283fc9e0c058f5e03f95c8e52a84d6b30b5553826b91dd&w=1480"
   }
 ]
+
+
