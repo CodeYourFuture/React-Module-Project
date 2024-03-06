@@ -1,6 +1,31 @@
+:root {
+  --booking-row-light: 20%;
+  --booking-row-saturation: 30%;
+}
+
 .customer-room,
 .customer-checkin,
 .customer-checkout,
 .customer-stay {
   text-align: center;
+}
+
+.booking-row:nth-child(even) {
+  background-color: hsl(
+    266,
+    var(--booking-row-saturation),
+    var(--booking-row-light)
+  );
+}
+
+.booking-row:nth-child(odd) {
+  background-color: hsl(
+    256,
+    var(--booking-row-saturation),
+    var(--booking-row-light)
+  );
+}
+
+.booking-row-selected {
+  filter: saturate(300%) brightness(130%);
 }

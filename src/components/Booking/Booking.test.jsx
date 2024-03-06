@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { render, screen } from "@testing-library/react";
+import { render, screen, fireEvent } from "@testing-library/react";
 import Booking from "./Booking.jsx";
 import FakeBookings from "../../data/fakeBookings.json";
 
@@ -11,5 +11,22 @@ describe("Booking Component", () => {
     render(<Booking booking={booking} />);
     const bookingComponent = screen.getByTestId("booking-component");
     expect(bookingComponent).toBeInTheDocument();
+  });
+
+  it("toggles selection when clicked", () => {
+    const booking = FakeBookings[0];
+    render(<Booking booking={booking} />);
+    const bookingComponent = screen.getByTestId("booking-component");
+
+    // Check that the component does not have the selected class by default
+    expect(bookingComponent).not.toHaveClass("booking-row-selected");
+
+    // Simulate a click event to toggle selection
+    fireEvent.click(bookingComponent);
+    expect(bookingComponent).toHaveClass("booking-row-selected");
+
+    // Simulate a second click event to deselect
+    fireEvent.click(bookingComponent);
+    expect(bookingComponent).not.toHaveClass("booking-row-selected");
   });
 });

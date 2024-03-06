@@ -1,4 +1,5 @@
 import dayjs from "dayjs";
+import { useState } from "react";
 
 import "./Booking.scss";
 
@@ -6,9 +7,18 @@ const Booking = (props) => {
   // prettier-ignore
   const { title, firstName, surname, email, roomId, checkInDate, checkOutDate } = props.booking;
   const stayNights = dayjs(checkOutDate).diff(dayjs(checkInDate), "d");
+  const [selected, setSelected] = useState(false);
+
+  const selectBookingHandle = () => {
+    setSelected(!selected);
+  }
 
   return (
-    <tr data-testid="booking-component">
+    <tr
+      className={selected ? "booking-row booking-row-selected" : "booking-row"}
+      data-testid="booking-component"
+      onClick={selectBookingHandle}
+    >
       <td className="customer-name">
         {title} {firstName} {surname}
       </td>

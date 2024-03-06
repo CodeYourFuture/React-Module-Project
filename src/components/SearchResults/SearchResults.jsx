@@ -6,7 +6,7 @@ const SearchResults = (props) => {
   return (
     <table data-testid="search-results-component">
       <thead>
-        <tr>
+        <tr className="table-header">
           <th scope="col">Name</th>
           <th scope="col">Email</th>
           <th scope="col">Room</th>
