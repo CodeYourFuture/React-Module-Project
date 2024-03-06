@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import "./Restaurant.scss";
+import RestaurantButton from "../RestaurantButton/RestaurantButton";
 
 const Restaurant = () => {
   const [orders, setOrders] = useState(0);
 
-  const handleAddPizza = () => {
+  const orderOnehandleAddPizza = () => {
     setOrders(orders + 1);
   };
 
@@ -14,14 +15,10 @@ const Restaurant = () => {
       <ul className="restaurant__list">
         <li className="restaurant__item">
           Pizzas: {orders}{" "}
-          <button
-            className="button restaurant__button"
-            onClick={handleAddPizza}
-          >
-            Add
-          </button>
+          <RestaurantButton orderOnehandleAddPizza={orderOnehandleAddPizza} />
         </li>
       </ul>
+
     </section>
   );
 };
