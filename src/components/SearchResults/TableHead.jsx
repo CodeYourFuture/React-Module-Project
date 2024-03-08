@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const TableHead = () => {
   return (
@@ -7,9 +7,10 @@ const TableHead = () => {
       <th>Title</th>
       <th>First Name</th>
       <th>Last Name</th>
+      <th>Nights</th>
       <th>Email</th>
     </tr>
   );
-}
+};
 
 export default TableHead;
