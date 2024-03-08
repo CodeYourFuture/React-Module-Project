@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import RestaurantButton from "../RestaurantButton/RestaurantButton";
 
 const Restaurant = () => {
   const [orders, setOrders] = useState(0);
@@ -12,9 +13,7 @@ const Restaurant = () => {
       <ul className="restaurant__list">
         <li className="restaurant__item">
           Orders: {orders}
-          <button className="button restaurant__button" onClick={handleAddOrder}>
-            Add
-          </button>
+          <RestaurantButton handleAddOrder={handleAddOrder} />
         </li>
       </ul>
     </section>
