@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import Search from "@/components/Search/Search";
-import FakeBookings from "@/data/fakeBookings.json"; 
+import React, { useState } from "react";
+import Search from "../Search/Search";
+import FakeBookings from "../../data/fakeBookings.json";
 import SearchResults from "../SearchResults/SearchResults";
 
 const Bookings = () => {
@@ -14,8 +14,8 @@ const Bookings = () => {
   return (
     <main className="bookings">
       <Search search={search} />
-    
-      <SearchResults results={bookings}/>
+
+      <SearchResults results={bookings} />
     </main>
   );
 };
