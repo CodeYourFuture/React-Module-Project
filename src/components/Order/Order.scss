@@ -1,0 +1,11 @@
+.restaurant__item {
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  button {
+    margin-bottom: 5px;
+  }
+}

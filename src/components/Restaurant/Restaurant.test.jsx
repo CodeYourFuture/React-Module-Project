@@ -15,19 +15,23 @@ describe("Restaurant", () => {
 describe("Restaurant Component", () => {
   it("displays initial number of pizza 0", () => {
     render(<Restaurant />);
-    const pizzaText = screen.getByText("Orders: 0");
-    expect(pizzaText).toBeInTheDocument();
+    const text1 = screen.getByText("Pizzas: 0");
+    const text2 = screen.getByText("Salads: 0");
+    const text3 = screen.getByText("Chocolate cake: 0");
+
+    expect(text1, text2, text3).toBeInTheDocument();
   });
 
   it("increase number of pizzas when 'Add' button is clicked", () => {
     render(<Restaurant />);
 
-    const addButton = screen.getByText("Add");
+    const addButtons = screen.getAllByTestId("addButton");
+    addButtons.map((addButton) => fireEvent.click(addButton));
 
-    fireEvent.click(addButton);
+    const updatedText1 = screen.getByText("Pizzas: 1");
+    const updatedText2 = screen.getByText("Salads: 1");
+    const updatedText3 = screen.getByText("Chocolate cake: 1");
 
-    const updatedPizzaText = screen.getByText("Orders: 1");
-
-    expect(updatedPizzaText).toBeInTheDocument();
+    expect(updatedText1, updatedText2, updatedText3).toBeInTheDocument();
   });
 });
