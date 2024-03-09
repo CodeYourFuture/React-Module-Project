@@ -22,6 +22,12 @@ Then you can start the development server:
 npm run dev
 ```
 
+You can clear the branches which has been deleted from remote by:
+
+```zsh
+git fetch --prune
+```
+
 It will open a browser window at [http://localhost:5173/](http://localhost:5173/) and a test runner at [http://localhost:51205/**vitest**/#/](http://localhost:51205/__vitest__/#/).
 
 ## Docs
