@@ -1,6 +1,6 @@
 export default function RestaurantButton({ handleAddOrder }) {
   return (
-    <button className="button restaurant__button" onClick={handleAddOrder}>
+    <button data-testid="addButton" className="button restaurant__button" onClick={handleAddOrder}>
       Add
     </button>
   );
