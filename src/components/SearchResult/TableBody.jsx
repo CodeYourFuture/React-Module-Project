@@ -23,7 +23,7 @@ function TableBody(props) {
       <tr
         key={id}
         onClick={handleSelect}
-        className={`table-row ${selectedRow}`}
+        className={`table-row  ${selectedRow}`}
       >
         <td>{id}</td>
         <td>{title}</td>
