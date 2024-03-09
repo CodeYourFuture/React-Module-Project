@@ -8,9 +8,10 @@ const Card = (props) => {
       <h2>{title}</h2>
       <img src={image} alt={title} />
 
-      <a href={url}> {title}</a>
-
-
+      <a href={url} className="cardhref ">
+        {" "}
+        {title}
+      </a>
     </div>
   );
 };
