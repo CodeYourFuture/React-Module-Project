@@ -1,7 +1,7 @@
 import RestaurantButton from "../RestaurantButton/RestaurantButton";
 import React, { useState } from "react";
 
-export default function Order() {
+export default function Order({ orderType }) {
   const [orders, setOrders] = useState(0);
   const handleAddOrder = () => {
     setOrders(orders + 1);
@@ -9,7 +9,7 @@ export default function Order() {
 
   return (
     <li className="restaurant__item">
-      Orders: {orders}
+      {orderType}: {orders}
       <RestaurantButton handleAddOrder={handleAddOrder} />
     </li>
   );
