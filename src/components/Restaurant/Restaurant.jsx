@@ -1,21 +1,11 @@
-import React, { useState } from "react";
+import Order from "../Order/Order";
 
 const Restaurant = () => {
-  const [orders, setOrders] = useState(0);
-  const handleAddOrder = () => {
-    setOrders(orders + 1);
-  };
-
   return (
     <section className="restaurant">
       <h3 className="restaurant__heading">Restaurant Orders</h3>
       <ul className="restaurant__list">
-        <li className="restaurant__item">
-          Orders: {orders}
-          <button className="button restaurant__button" onClick={handleAddOrder}>
-            Add
-          </button>
-        </li>
+        <Order />
       </ul>
     </section>
   );
