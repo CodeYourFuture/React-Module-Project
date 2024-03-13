@@ -5,16 +5,11 @@ import SearchResults from "../SearchResults/SearchResults";
 import AddBookingForm from "./AddBookingForm";
 
 const Bookings = () => {
-  
   const [bookings, setBookings] = useState(FakeBookings);
 
   const search = (searchVal) => {
     console.info("TO DO!", searchVal);
   };
-
-  
-
-
 
   return (
     <main className="bookings">

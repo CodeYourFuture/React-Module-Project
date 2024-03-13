@@ -13,8 +13,6 @@ const AddBookingForm = ({ bookings, setBookings }) => {
   });
 
   const [nextId, setNextId] = useState(bookings.length + 1);
- 
-
 
   const addBooking = (newBooking) => {
     setBookings([...bookings, newBooking]);
@@ -43,7 +41,6 @@ const AddBookingForm = ({ bookings, setBookings }) => {
       checkOutDate: "",
     });
     setNextId(nextId + 1);
-   
   };
 
   return (
