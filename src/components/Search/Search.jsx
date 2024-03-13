@@ -2,7 +2,7 @@ import "./Search.scss";
 import SearchButton from "../SearchButton/SearchButton";
 import { useState } from "react";
 
-const Search = () => {
+const Search = (props) => {
   const [searchInput, setSearchInput] = useState("");
 
   const handleSearchInput = (event) => {
@@ -10,13 +10,16 @@ const Search = () => {
   };
 
   console.log(searchInput);
-
+  const onSubmitHandler = (event) => {
+    event.preventDefault();
+    props.search(searchInput);
+  };
   return (
     <section className="search">
       <header className="search__header">
         <h4 className="search__heading heading">Search Bookings</h4>
       </header>
-      <form className="search__form">
+      <form className="search__form" onSubmit={onSubmitHandler}>
         <label className="search__label" htmlFor="customerName">
           &rarr;
         </label>
