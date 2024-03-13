@@ -46,6 +46,7 @@ const AddBookingForm = ({ bookings, setBookings }) => {
   return (
     <form onSubmit={handleSubmit}>
       <input
+      required
         type="text"
         name="firstName"
         placeholder="First Name"
@@ -53,6 +54,7 @@ const AddBookingForm = ({ bookings, setBookings }) => {
         onChange={handleChange}
       />
       <input
+      required
         type="text"
         name="surname"
         placeholder="Surname"
@@ -60,6 +62,7 @@ const AddBookingForm = ({ bookings, setBookings }) => {
         onChange={handleChange}
       />
       <input
+      required
         type="email"
         name="email"
         placeholder="Email"
@@ -67,6 +70,7 @@ const AddBookingForm = ({ bookings, setBookings }) => {
         onChange={handleChange}
       />
       <input
+      required
         type="text"
         name="title"
         placeholder="Title"
@@ -81,6 +85,7 @@ const AddBookingForm = ({ bookings, setBookings }) => {
         onChange={handleChange}
       />
       <input
+      required
         type="date"
         name="checkInDate"
         placeholder="Check In Date"
@@ -88,6 +93,7 @@ const AddBookingForm = ({ bookings, setBookings }) => {
         onChange={handleChange}
       />
       <input
+      required
         type="date"
         name="checkOutDate"
         placeholder="Check Out Date"
