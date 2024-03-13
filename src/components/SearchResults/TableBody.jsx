@@ -1,14 +1,26 @@
 import React from "react";
+import dayjs from "dayjs";
 
-const TableBody = ({ id, title, firstName, surName, email, nights }) => {
+const TableBody = ({ booking, handleShowProfile }) => {
+  const testid = "showProfileButton" + booking.id;
   return (
     <tr>
-      <td>{id}</td>
-      <td>{title}</td>
-      <td>{firstName}</td>
-      <td>{surName}</td>
-      <td>{nights}</td>
-      <td>{email}</td>
+      <td>{booking.id}</td>
+      <td>{booking.title}</td>
+      <td>{booking.firstName}</td>
+      <td>{booking.surname}</td>
+      <td>
+        {dayjs(booking.checkOutDate)
+          .diff(dayjs(booking.checkInDate), "days")
+          .toString()
+          .padStart(2, "0")}
+      </td>
+      <td>{booking.email}</td>
+      <td>
+        <button data-testid={testid} value={booking.id} onClick={handleShowProfile}>
+          Show Profile
+        </button>
+      </td>
     </tr>
   );
 };
