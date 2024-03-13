@@ -18,7 +18,6 @@ function SearchResult() {
             "day"
           );
           return (
-            <>
               <TableBody
                 key={book.id}
                 id={book.id}
@@ -31,7 +30,6 @@ function SearchResult() {
                 checkOutDate={book.checkOutDate}
                 stayNights={stayNightsTotal}
               />
-            </>
           );
         })}
       </tbody>
@@ -39,4 +37,4 @@ function SearchResult() {
   );
 }
 export default SearchResult;
-console.log(SearchResult());
+

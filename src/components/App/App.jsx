@@ -15,9 +15,7 @@ const App = () => (
     </div>
     <Bookings />
     <Restaurant />
-
     <Deck />
-
     <Footer
       details={[
         "123 Fake Street, London, E1 4UD",
