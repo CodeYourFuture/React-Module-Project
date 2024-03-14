@@ -4,7 +4,6 @@ import FakeBookings from "../../data/fakeBookings.json";
 import SearchResults from "../SearchResults/SearchResults";
 
 const Bookings = () => {
-  
   const [bookings, setBookings] = useState(FakeBookings);
 
   const search = (searchVal) => {
@@ -15,7 +14,7 @@ const Bookings = () => {
     <main className="bookings">
       <Search search={search} />
 
-      <SearchResults results={bookings} />
+      <SearchResults bookings={bookings} />
     </main>
   );
 };
