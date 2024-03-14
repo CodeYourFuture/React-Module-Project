@@ -13,7 +13,7 @@ const Bookings = () => {
 
   return (
     <main className="bookings">
-      <Search search={search} />
+      <Search className="searchBtn" search={search} />
 
       <SearchResults results={bookings} />
       <AddBookingForm bookings={bookings} setBookings={setBookings} />

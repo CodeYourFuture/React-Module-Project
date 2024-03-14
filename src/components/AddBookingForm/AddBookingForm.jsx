@@ -1,4 +1,5 @@
-import { useState } from "react";
+import React, { useState } from "react";
+import "./AddBookingForm.scss";
 
 const AddBookingForm = ({ bookings, setBookings }) => {
   const [formData, setFormData] = useState({
@@ -11,7 +12,6 @@ const AddBookingForm = ({ bookings, setBookings }) => {
     checkInDate: "",
     checkOutDate: "",
   });
-
   const [nextId, setNextId] = useState(bookings.length + 1);
 
   const addBooking = (newBooking) => {
@@ -20,10 +20,7 @@ const AddBookingForm = ({ bookings, setBookings }) => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
+    setFormData((prevData) => ({ ...prevData, [name]: value }));
   };
 
   const handleSubmit = (e) => {
@@ -46,7 +43,7 @@ const AddBookingForm = ({ bookings, setBookings }) => {
   return (
     <form onSubmit={handleSubmit}>
       <input
-      required
+        required
         type="text"
         name="firstName"
         placeholder="First Name"
@@ -54,7 +51,7 @@ const AddBookingForm = ({ bookings, setBookings }) => {
         onChange={handleChange}
       />
       <input
-      required
+        required
         type="text"
         name="surname"
         placeholder="Surname"
@@ -62,19 +59,36 @@ const AddBookingForm = ({ bookings, setBookings }) => {
         onChange={handleChange}
       />
       <input
-      required
+        required
+        type="text"
+        name="title"
+        placeholder="Title"
+        value={formData.title}
+        onChange={handleChange}
+      />
+      <input
+        required
         type="email"
         name="email"
         placeholder="Email"
         value={formData.email}
         onChange={handleChange}
       />
+
       <input
-      required
-        type="text"
-        name="title"
-        placeholder="Title"
-        value={formData.title}
+        required
+        type="date"
+        name="checkInDate"
+        placeholder="Check In Date"
+        value={formData.checkInDate}
+        onChange={handleChange}
+      />
+      <input
+        required
+        type="date"
+        name="checkOutDate"
+        placeholder="Check Out Date"
+        value={formData.checkOutDate}
         onChange={handleChange}
       />
       <input
@@ -84,23 +98,7 @@ const AddBookingForm = ({ bookings, setBookings }) => {
         value={formData.roomId}
         onChange={handleChange}
       />
-      <input
-      required
-        type="date"
-        name="checkInDate"
-        placeholder="Check In Date"
-        value={formData.checkInDate}
-        onChange={handleChange}
-      />
-      <input
-      required
-        type="date"
-        name="checkOutDate"
-        placeholder="Check Out Date"
-        value={formData.checkOutDate}
-        onChange={handleChange}
-      />
-      <button type="submit">Submit</button>
+      <button type="submit">Book now</button>
     </form>
   );
 };
