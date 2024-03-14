@@ -5,7 +5,7 @@ import TableBody from "./TableBody";
 import CustomerProfile from "../CustomerProfile/CustomerProfile";
 
 const SearchResults = ({ bookings }) => {
-  const [selectedProfile, setSelectedProfile] = useState(null);
+  const [selectedProfileId, setSelectedProfile] = useState(null);
 
   function handleShowProfile(e) {
     setSelectedProfile(Number(e.target.value));
@@ -22,7 +22,7 @@ const SearchResults = ({ bookings }) => {
           ))}
         </tbody>
       </table>
-      <CustomerProfile id={selectedProfile} bookings={bookings} />
+      {selectedProfileId ? <CustomerProfile id={selectedProfileId} /> : null}
     </>
   );
 };

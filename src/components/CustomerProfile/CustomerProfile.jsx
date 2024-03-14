@@ -1,12 +1,26 @@
-export default function CustomerProfile({ id, bookings }) {
-  const booking = bookings.find((booking) => booking.id === id);
+import { useEffect, useState } from "react";
 
-  if (booking)
+export default function CustomerProfile({ id }) {
+  const [displayingProfile, setDisplayingProfile] = useState(null);
+
+  useEffect(() => {
+    fetch(`https://cyf-hotel-api.netlify.app/customers/${id}`)
+      .then((response) => response.json())
+      .then((data) => setDisplayingProfile(data));
+  }, [id]);
+
+  if (displayingProfile)
     return (
       <div data-testid="profileCard" className="card">
-        <h3 data-testid="profileId">Customer Id: {booking.id}</h3>
-        <p>Name: {booking.firstName}</p>
-        <p>Surname: {booking.surname}</p>
+        <ul>
+          <li data-testid="profileId">Customer Id: {displayingProfile.id}</li>
+          <li>
+            Full Name: {displayingProfile.firstName} {displayingProfile.surname}
+          </li>
+          <li>E-mail: {displayingProfile.email}</li>
+          <li>Type: {displayingProfile.vip ? "VIP" : "Regular"}</li>
+          <li>Contact Number: {displayingProfile.phoneNumber}</li>
+        </ul>
       </div>
     );
 }
