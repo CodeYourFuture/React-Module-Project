@@ -17,7 +17,6 @@ function SearchResult(props) {
             "day"
           );
           return (
-            <>
               <TableBody
                 key={book.id}
                 id={book.id}
@@ -30,7 +29,6 @@ function SearchResult(props) {
                 checkOutDate={book.checkOutDate}
                 stayNights={stayNightsTotal}
               />
-            </>
           );
         })}
       </tbody>
@@ -38,3 +36,4 @@ function SearchResult(props) {
   );
 }
 export default SearchResult;
+
