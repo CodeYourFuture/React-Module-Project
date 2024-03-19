@@ -1,4 +1,3 @@
-import FakeBookings from "@/data/fakeBookings.json";
 import React from "react";
 import { useState } from "react";
 function TableBody(props) {
