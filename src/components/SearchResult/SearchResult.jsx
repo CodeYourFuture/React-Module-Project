@@ -1,11 +1,10 @@
 import "./SearchResult.scss";
-import FakeBookings from "@/data/fakeBookings.json";
 import TableBody from "./TableBody";
 import TableHead from "./TableHead";
 import dayjs from "dayjs";
 
-const Bookings = FakeBookings;
-function SearchResult() {
+function SearchResult(props) {
+  const Bookings = props.results;
   return (
     <table>
       <thead>
