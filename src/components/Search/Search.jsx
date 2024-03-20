@@ -9,7 +9,6 @@ const Search = (props) => {
     setSearchInput(event.target.value);
   };
 
-  console.log(searchInput);
   const onSubmitHandler = (event) => {
     event.preventDefault();
     props.search(searchInput);
