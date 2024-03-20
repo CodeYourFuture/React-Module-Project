@@ -8,6 +8,16 @@ const Bookings = () => {
 
   const search = (searchVal) => {
     console.info("TO DO!", searchVal);
+    const fils = FakeBookings.filter((book) => {
+      const firstName = book.firstName.toLowerCase();
+      const lastName = book.surname.toLowerCase();
+      searchValueCase = searchVal.toLowerCase();
+      return (
+        firstName.includes(searchValueCase) ||
+        lastName.includes(searchValueCase)
+      );
+    });
+    setBookings(fils);
   };
 
   return (
