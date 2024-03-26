@@ -8,7 +8,8 @@ const Bookings = () => {
   const [bookings, setBookings] = useState(FakeBookings);
 
   const search = (searchVal) => {
-    console.info("TO DO!", searchVal);
+    const filteredBookings = FakeBookings.filter((booking) => booking.firstName.toLowerCase().includes(searchVal.toLowerCase()) || booking.surname.toLowerCase().includes(searchVal.toLowerCase()));
+    setBookings(filteredBookings);
   };
 
   return (
@@ -17,6 +18,7 @@ const Bookings = () => {
 
       <SearchResults results={bookings} />
       <AddBookingForm bookings={bookings} setBookings={setBookings} />
+
     </main>
   );
 };

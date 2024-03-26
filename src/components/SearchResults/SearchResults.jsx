@@ -1,32 +1,29 @@
 // SearchResults.jsx
-import React from "react";
+import React, { useState } from "react";
 import TableHead from "./TableHead";
 import TableBody from "./TableBody";
-import dayjs from "dayjs";
+import CustomerProfile from "../CustomerProfile/CustomerProfile";
 
-const SearchResults = ({ results }) => {
+const SearchResults = ({ bookings }) => {
+  const [selectedProfileId, setSelectedProfile] = useState(null);
+
+  function handleShowProfile(e) {
+    setSelectedProfile(Number(e.target.value));
+  }
   return (
-    <table>
-      <thead>
-        <TableHead />
-      </thead>
-      <tbody>
-        {results.map((booking) => (
-          <TableBody
-            key={booking.id}
-            id={booking.id}
-            title={booking.title}
-            firstName={booking.firstName}
-            surName={booking.surname}
-            nights={dayjs(booking.checkOutDate)
-              .diff(dayjs(booking.checkInDate), "days")
-              .toString()
-              .padStart(2, "0")}
-            email={booking.email}
-          />
-        ))}
-      </tbody>
-    </table>
+    <>
+      <table>
+        <thead>
+          <TableHead />
+        </thead>
+        <tbody>
+          {bookings.map((booking) => (
+            <TableBody key={booking.id} booking={booking} handleShowProfile={handleShowProfile} />
+          ))}
+        </tbody>
+      </table>
+      {selectedProfileId ? <CustomerProfile id={selectedProfileId} /> : null}
+    </>
   );
 };
 
